@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font: normal 1.2em Aril,Helvetica,serif;
+        }
+        
+        #botao{
+            font-size: 0.75em;
+            height: 30px;
+            width: 150px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>11) Desenvolva uma lógica que leia os valores de A, B e C de uma equação do segundo grau e mostre o valor de Delta.</h1>
+
+    <label for="valorA">Digite o valor de A:</label>
+    <input type="number" name="valorA" id="valorA">
+    <br>
+
+    <label for="valorB">Digite o valor de B:</label>
+    <input type="number" name="valorB" id="valorB">
+    <br>
+
+    <label for="valorC">Digtie o valor de C:</label>
+    <input type="number" name="valorC" id="valorC">
+    <br>
+
+    <input type="button" value="Calcular Delta" onclick="calcular()" id="botao">
+    <p id="res"></p>
+
+    <script>
+        function calcular(){
+        var txtva =  document.getElementById('valorA');
+        var txtvb = document.getElementById('valorB');
+        var txtvc = document.getElementById('valorC');
+        var resultado =  document.getElementById('res');
+
+        var a =  Number(txtva.value)
+        var b =  Number(txtvb.value)
+        var c =  Number(txtvc.value)
+        var delta = b * b - 4 * a *c
+
+        resultado.innerHTML = `<p>A = ${a}</p>`
+        resultado.innerHTML += `<p>B = ${b}</p>`
+        resultado.innerHTML += `<p>C = ${c}</p>`
+        resultado.innerHTML += ` A expressão de segundo grau fica assim  <strong>Delta Δ = b * b - 4 * a *c</strong>`
+        resultado.innerHTML += `<p>O valor do Delta é igual a = ${delta}</p>`
+        }
+    </script>
+
+</body>
+</html>

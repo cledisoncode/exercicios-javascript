@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font: normal 1em Arial,Helvetica,serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>24) Faça um algoritmo que pergunte a distância que um passageiro deseja percorrer em Km. Calcule o preço da passagem, cobrando R$0.50 por Km para viagens até 200Km e R$0.45 para viagens mais longas.</h1>
+    
+    <div>
+        <p>
+            <label for="km_percorridos">Quantos quilômetros você deseja percorrer?(km)</label>
+            <input type="number" name="km_percorridos" id="km_percorridos"> 
+        </p>
+        <p>
+            <input type="button" value="Calcular" id="botao" onclick="calcular()">
+        </p>
+        <p id="res">
+
+        </p>
+    </div>
+
+    <script>
+    function calcular(){
+        var txtkm =  Number(document.getElementById("km_percorridos").value)
+        var res = document.getElementById("res");
+
+        var pass_curtas = txtkm * 0.50;
+        var pass_longas = txtkm * 0.45;
+
+        if(txtkm <= 200){
+            res.innerHTML = `A distância da sua viagem é de ${txtkm} km.E custará R$ ${pass_curtas.toFixed(2)} reais`;
+        }else{
+            res.innerHTML = `A distância da sua viagem é de ${txtkm} km. E custará R$ ${pass_longas.toFixed(2)} reais`;
+
+        }
+
+    }
+    </script>
+</body>
+</html>

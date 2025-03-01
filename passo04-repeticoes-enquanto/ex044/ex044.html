@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        section{
+            background-color: #ffebcd;
+            margin: auto;
+            width: 500px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        div#res{
+            text-align: start;
+        }
+    </style>
+</head>
+<body>
+    <h1>44) Crie um algoritmo que leia o valor inicial da contagem, o valor final e o incremento, mostrando em seguida todos os valores no intervalo:
+        Ex: Digite o primeiro Valor: 3
+        Digite o último Valor: 10
+        Digite o incremento: 2
+        Contagem: 3 5 7 9 Acabou! </h1>
+
+        <section>
+            <div>
+                <p>Digile o valor de início: <input type="number" name="num_inicio" id="txti"></p>
+                <p>Digite o último valor: <input type="number" name="num_fim" id="txtf"> </p>
+                <p>Digite o valor de incremento: <input type="number" name="num_incremento" id="txtp"></p>
+                <p>
+                    <input type="button" value="Contar" onclick="contar()" id="button">
+                </p>
+            </div>
+
+            <div id="res">
+                Preparando Contagem.....
+            </div>
+
+        </section>
+
+        <script src="ex044.js"></script>
+</body>
+</html>

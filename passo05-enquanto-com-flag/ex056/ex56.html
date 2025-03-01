@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, #d11616, #0000ff);
+        }
+
+        h4{
+            text-align: center;
+        }
+
+        div{
+            background-color: #191970;
+            height: 50vh;
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>56) Crie um programa que leia vários números pelo teclado e mostre no final o somatório entre eles.
+    Obs: O programa será interrompido quando o número 1111 for digitado</h1>
+
+    <h4>Clique 2x no retângulo para iniciar o programa</h4>
+    <div id="res" ondblclick="somatorio()"></div>
+
+    <script>
+        function somatorio(){
+            let res = document.getElementById('res');
+            let soma = 0;
+            let c = 0;
+
+            let numero = 0;
+            while(numero !== 1111){
+                soma +=  numero;
+                c++;
+                numero = parseFloat(prompt('Digite um numero(Caso queirar parar o programa,digite 1111):'));
+            }
+            res.style.color = 'white';
+            res.style.textAlign =  'center';
+            res.style.lineHeight = '50vh';
+            res.innerHTML += `A soma de todos os valores é: ${soma}`;
+        }
+    </script>          
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font: normal 1.2em Arial,Helvetica, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>20) Desenvolva um programa que leia um número inteiro e mostre se ele é PAR ou ÍMPAR.</h1>
+
+        <div>
+            <p>
+                <label for="numero">Digite um numero:</label>
+                <input type="number" name="numero" id="numero">
+            </p>
+            <p>
+                <input type="button" value="Verificar" id="botao" onclick="verificar()">
+            </p>
+            <p id="res">
+
+            </p>
+        </div>
+
+        <script>
+            function verificar(){
+            var txtn = document.getElementById('numero');
+            var res = document.getElementById('res');
+
+            var txtN =  Number(txtn.value);
+
+            if( txtN % 2 == 0){
+                res.innerHTML = `<p>O número ${txtN} é PAR, pois a divisão de ${txtN} por 2 , tem resto igual a 0</p>`
+                
+            }else if(txtN % 2 != 0){
+                res.innerHTML = `<p>O número ${txtN} é ÍMPAR, pois a divisão de ${txtN} por 2 , tem resto diferente de  0</p>`
+            }else{
+                res.innerText = `<p>Que número tu digitou,crlh?</p>`
+            }
+        }
+        </script>
+</body>
+</html>

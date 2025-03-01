@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            background-color: #f5f5dc;
+            background-image: linear-gradient(to bottom, blue,yellow);
+            background-position: center center;
+            background-repeat: repeat;
+            background-attachment: fixed;
+        }
+
+        div{
+            background-color: rgb(17, 235, 28);
+            text-align: center;
+            padding: 10px;
+            margin: auto;
+            height: 200px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        69) [DESAFIO] Desenvolva um programa que leia o primeiro termo e a razão de uma PA (Progressão Aritmética), mostrando na tela os 10 primeiros elementos da PA e a soma entre todos os valores da sequência.
+    </h1>
+
+    <div>
+        <p>
+            Digite o primeiro termo: <input type="number" name="primeiroTermo" id="txtpt">
+        </p>
+        <p>
+            Digite a razão: <input type="number" name="razao" id="txtr">
+        </p>
+        <p><input type="button" value="Calcular PA" onclick="pa()"></p>
+        <p id="res">
+            PA:
+        </p>
+    </div>
+
+    <script src="ex069.js"></script>
+</body>
+</html>

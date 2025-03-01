@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font-size: 1.3em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #botao{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>6) Faça um programa que leia um número inteiro e mostre o seu antecessor e seu sucessor.</h1>
+
+    <label for="numero">Digite um número:</label>
+    <input type="number" name="numero" id="numero">
+    <br>
+    <input type="button" value="Calcular" id="botao" onclick="calcular()">
+    <p id="res">
+
+    </p>
+
+    <script>
+        function calcular(){
+        var txtn = document.getElementById('numero');
+        var resultado = document.querySelector('p#res');
+
+        var numero = Number(txtn.value);
+        var sucessor = Number(txtn.value) + 1
+        var antecessor = Number(txtn.value) - 1;
+
+
+        resultado.innerHTML = `<p>O <strong>número</strong> digitado foi <strong>${numero}</strong></p>`;
+
+        resultado.innerHTML += `<p>O <strong>antecessor</strong> do número ${numero} é  igual a = <strong> ${antecessor}</strong></p>`
+
+        resultado.innerHTML += `<p>O <strong>sucessor</strong> do número ${numero} é igual a = <strong> ${sucessor}</strong></p>`
+
+        
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        h4{
+            text-align: center;
+            color: #7fff00;
+        }
+
+        div{
+            background-color: beige;
+            margin: auto;
+            width: 600px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>40) Crie um aplicativo que mostre na tela a seguinte contagem:
+        0 3 6 9 12 15 18 Acabou!;</h1>
+
+        <h4>Clique no Retângulo</h4>
+        <div>
+            <p id="res">
+
+            </p>
+        </div>
+
+        <script>
+        let div = document.querySelector('div');
+        div.addEventListener('click', clique);
+
+        function clique(){
+            let res = document.getElementById('res');
+            res.style.textAlign = `center`;
+            res.style.lineHeight = `300px`;
+
+            res.innerHTML = '';
+            let c = 0;
+            while(c <= 18){
+                res.innerHTML += `${c} \u{1F478}`;
+                c += 3;
+            }
+            res.innerHTML += `Acabou!`;
+        }
+        </script>
+</body>
+</html>

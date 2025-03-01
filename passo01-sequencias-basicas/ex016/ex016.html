@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.1em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input{
+            margin-top: 20px;
+        }
+    </style>
+    <script src="ex016.js"></script>
+</head>
+<body>
+    <h1>16) [DESAFIO] Escreva um programa para calcular a redução do tempo de vida de um fumante. Pergunte a quantidade de cigarros fumados por dias e quantos anos ele já fumou. Considere que um fumante perde 10 min de vida a cada cigarro. Calcule quantos dias de vida um fumante perderá e exiba o total em dias</h1>
+
+    <label for="anosFumando">Há quantos anos você fuma?</label>
+    <input type="number" name="anos" id="anos">
+    <br>
+    <label for="quantCigarros">Quantos cigarros você fuma por dia?</label>
+    <input type="number" name="quantCigarros" id="quantCigarros">
+    <br>
+    <input type="button" value="Calcular" onclick="calcular()">
+    <p id="res"></p>
+</body>
+</html>

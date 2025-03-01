@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>3) Crie um programa que leia o nome e o salário de um funcionário, mostrando no final uma mensagem.
+    </h1>
+
+    <label for="name">Digite seu nome:</label> 
+    <input type="text" name="usuario" id="usuario">
+    <br><br>
+
+    <label for="salario">Digite seu salário R$</label>
+    <input type="number" name="salario" id ="salario">
+
+    <br>
+    <br>
+    
+    <input type="button" value="Confirmar" id="botao" onclick="confirmar()">
+    <p id="res">
+
+    </p>
+
+    <script>
+        function confirmar(){
+        var txtnome = document.querySelector('input#usuario');
+        var txtsalario = document.querySelector('input#salario');
+        var resultado = document.getElementById('res');
+
+        var funcionario = txtnome.value;
+        var salario = Number(txtsalario.value);
+
+        resultado.style.fontSize = "1.3em"
+        resultado.innerHTML = `<p><strong>O nome do funcionário é: ${funcionario}</strong></p><br>`;
+        
+        resultado.innerHTML += `<p><strong>Seu salário é R$ ${salario.toFixed(2)}</strong></p>`;
+
+        
+        }
+        
+
+    </script>
+</body>
+</html>

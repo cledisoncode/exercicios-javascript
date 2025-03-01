@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font: normal 1em Arial,serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>27) Crie um programa que leia duas notas de um aluno e calcule a sua média, mostrando uma mensagem no final, de acordo com a média atingida:
+    - Média até 4.9: REPROVADO
+    - Média entre 5.0 e 6.9: RECUPERAÇÃO
+    - Média 7.0 ou superior: APROVADO</h1>
+
+    <div>
+        <p>
+            <label for="nota1">Digite sua primeira nota:</label>
+            <input type="number" name="nota" id="nota1">
+            <br>
+            <label for="nota2">Digite sua segunda nota:</label>
+            <input type="number" name="nota" id="nota2">
+        </p>
+        <p>
+            <input type="button" value="Calcular" onclick="calcular()" id="button">
+        </p>
+        <p id="res">
+
+        </p>
+    </div>
+
+    <script>
+        function calcular(){
+            var txtn1 = document.getElementsByName('nota')[0];
+            var txtn2 = document.getElementsByName('nota')[1];
+            var nota1 = Number(txtn1.value);
+            var nota2 =  Number(txtn2.value);
+            var res = document.querySelector('p#res');
+
+            var media = (nota1 + nota2) / 2;
+
+            if(media >= 7){
+                res.innerHTML = `Parabéns!.Você está aprovado com a média ${media.toFixed(2)}`;
+
+            }else if(media >= 5 && media < 7){
+                res.innerHTML = `Ops!.Você não atingiu a média necessária e ficou de recuperação.Sua média foi ${media.toFixed(2)}`;
+
+            }else if(media < 5){
+                res.innerHTML = `Infelizmente, você não alcançou a média para ser aprovado, muito menos para ter a chance de fazer a recuperação.Você está reprovado!. Sua média é ${media.toFixed(2)}`;
+            }
+
+        }
+    </script>
+</body>
+</html>

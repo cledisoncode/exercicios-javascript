@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font: normal 1.2em Arial, Helvetica, serif;
+
+        }
+
+        input{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>19) Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua média e mostre na tela. No final, analise a média e mostre se o aluno teve ou  não um bom aproveitamento (se ficou acima da média 7.0).</h1>
+
+    <div>
+        <p>
+            <label for="nota1">Digite sua primeira nota:</label>
+            <input type="number" name="nota1" class="nota">
+            <br>
+            <label for="nota2">Digite a sua segunda nota:</label>
+            <input type="number" name="nota2" class="nota">
+        </p>
+        <p>
+            <input type="button" value="Calcular" onclick="calcular()" id="botao">
+        </p>
+        <p id="res">
+
+        </p>
+
+        <script src="ex019.js"></script>
+
+
+    </div>
+</body>
+</html>

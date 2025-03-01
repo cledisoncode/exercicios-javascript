@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            height: 100%;
+            background-color: #3ab9e4;
+            background-image: url(imagens/wallpaper007.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+
+        h1{
+            color: red;
+        }
+        div#conteudo{
+            height: 700px;
+            width: 400px;
+            background-color: bisque;
+            margin: auto;
+        }
+
+        p{
+            font: normal bolder 1em Aril,Helvetica;
+            padding: 5px;
+            text-align: center;
+        }
+
+        input{
+            margin-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>66) Escreva um programa que leia um número qualquer e mostre a tabuada desse número, usando a estrutura “para”.
+    Ex: Digite um valor: 5
+    5 x 1 = 5
+    5 x 2 = 10
+    5 x 3 = 15 ...
+    </h1>
+
+    <div id="conteudo">
+        <p>Número: 
+            <input type="number" name="numero" id="num">
+            <input type="button" value="Gerar Tabuada" name="botao" id="botao" onclick="tabuada()">
+        </p>
+        <p>
+            <select name="seltab" id="seltab" size="10">
+                <option>Digite um número acima</option>
+            </select>
+        </p>
+    </div>
+
+    <script src="ex066.js"></script>
+</body>
+</html>

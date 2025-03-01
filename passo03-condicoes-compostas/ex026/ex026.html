@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font: normal 1em Arial,Helvetica,serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>26) Escreva um algoritmo que leia dois números inteiros e compare-os, mostrando na tela uma das mensagens abaixo:
+    - O primeiro valor é o maior
+    - O segundo valor é o maior
+    - Não existe valor maior, os dois são iguais</h1>
+
+    <div>
+        <p>
+            <label for="numero1">Digite um número inteiro:</label>
+            <input type="number" name="numero1" class="numero">
+            <br>
+            <label for="numero2">Digite outro número inteiro:</label>
+            <input type="number" name="numero2" class="numero">
+        </p>
+        <p>
+            <input type="button" value="Comparar" onclick="comparar()" id="button">
+        </p>
+        <p id="res"></p>
+    </div>
+
+    <script>
+        function comparar(){
+        var txtn1 = document.getElementsByClassName("numero")[0];
+        var txtn2 = document.getElementsByClassName("numero")[1];
+        var valor1 = Number(txtn1.value);
+        var valor2 =  Number(txtn2.value);
+        var res =  document.querySelector("p#res");
+
+        if(valor1 > valor2){
+            res.innerHTML = `O primeiro número (${valor1}), é maior que o segundo número (${valor2})`;
+
+        }else if(valor2 > valor1){
+            res.innerHTML = `O segundo número (${valor2}), é maior que o  primeiro número (${valor1})`;
+
+        }else if( valor1 == valor2){
+            res.innerHTML = `O primeiro número (${valor1}), é igual ao segundo número (${valor2})`;
+        }
+    }
+    </script>
+</body>
+</html>

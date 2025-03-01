@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            background-image: url(imagens/wallpaper001.jpg);
+            background-position: center center;
+            background-size: 100px 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>48) Faça um programa que leia 7 números inteiros e no final mostre o somatório entre eles.</h1>
+
+    <h2>Este exercício foi feito utilizando prompt, diferente dos outros exercícios em que eu juntei html e js!</h2>
+
+
+    <script>
+        let c = 1;
+        let soma = 0;
+        while(c <= 7){
+            let num = parseInt(prompt('Digite um número: '));
+            soma += num;
+            c++;
+        }
+        alert(`A soma total dos numeros é = ${soma}`)
+    </script>
+</body>
+</html>

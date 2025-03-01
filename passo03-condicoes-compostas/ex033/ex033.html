@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+</head>
+<body>
+    <h1>33) Escreva um programa para aprovar ou não o empréstimo bancário para a compra de uma casa. O programa vai perguntar o valor da casa, o salário do comprador e em quantos anos ele vai pagar. Calcule o valor da prestação mensal, sabendo que ela não pode exceder 30% do salário ou então o empréstimo será negado.</h1>
+
+    <div>
+        <p>
+            <label for="casa_valor">Qual o valor da casa?</label>
+            <input type="number" name="casa_valor" id="casa_valor">
+            <br>
+            <label for="salario">Qual o seu salário?</label>
+            <input type="number" name="salario" id="salario">
+            <br>
+            <label for="anos">Em quantos anos você pretende pagar?</label>
+            <input type="number" name="anos" id="anos">
+        </p>
+
+        <p>
+            <input type="button" value="Calcular" onclick="calcular()" id="button">
+        </p>
+
+        <p id="res">
+            <!--Aqui vai a resposta do js-->
+        </p>
+    </div>
+    <script src="ex033.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        input#nota1{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>5) Faça um programa que leia as duas notas de um aluno em uma matéria e mostre  na tela a sua média na disciplina.</h1>
+
+
+    <label for="primeiraNota">Digite sua primeira nota:</label>
+    <input type="number" name="nota1" id="nota1">
+    <br>
+    <label for="segundaNota">Digite sua segunda nota:</label>
+    <input type="number" name="nota2" id="nota2">
+    <br>
+    <br>
+    <input type="button" value="Calcular Media" id="botao" onclick="calcular()">
+
+    <p id="res">
+
+    </p>
+
+    <script>
+        function calcular(){
+        var txtn1 = document.querySelector('input#nota1')
+        var txtn2 = document.querySelector('input#nota2')
+        var resultado = document.querySelector('p#res')
+
+        var nota1 = Number(txtn1.value)
+        var nota2 = Number(txtn2.value)
+        var media = (nota1 + nota2) / 2;
+
+        resultado.innerHTML = `<p><strong>Nota 1:</strong> ${nota1.toFixed(1)}</p><br>`;
+
+        resultado.innerHTML += `<p><strong>Nota 2:</strong> ${nota2.toFixed(1)}</p><br>`;
+
+        resultado.innerHTML += `<p><strong>A sua media é = </strong> ${media.toFixed(1)}</p>`;
+        }
+    </script>
+</body>
+</html>

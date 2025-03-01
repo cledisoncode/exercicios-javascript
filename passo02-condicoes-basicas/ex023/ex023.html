@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font: oblique normal 1em Arial,Helvetica,serif;
+        }
+        div{
+            width: 700px;
+            background-color: bisque;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>23) Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos para todos, mas especialmente para mulheres. Faça um programa que leia nome, sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo que:
+    - Homens ganham 5% de desconto
+    - Mulheres ganham 13% de desconto
+    </h1>
+
+    <div>
+        <p>
+            <label for="nome">Qual o seu nome?</label>
+            <input type="text" name="nomeCliente" id="nome">
+        </p>
+        <p>
+            <label for="fsex">Qual o seu sexo?</label>
+
+            <input type="radio" name="radsex" id="masc" checked>
+            <label for="masc">Masculino</label>
+
+            <input type="radio" name="radsex" id="fem" checked>
+            <label for="fem">Feminino</label>
+
+            <input type="radio" name="radsex" id="binario" checked>
+            <label for="binario">Não Binário</label>
+
+        </p>
+        <p>
+            <label for="preco">Qual o valor das suas compras? R$
+            <input type="number" name="preco" id="preco">
+        </p>
+        <p>
+            <input type="button" value="Calcular Desconto" id="botao" onclick="desconto()">
+        </p>
+        <p id="res">
+
+        </p>
+    </div>
+    <script src="ex023.js"></script>
+</body>
+</html>

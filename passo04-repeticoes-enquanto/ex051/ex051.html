@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            background-image: url(imagens/pattern002.png);
+        }
+    </style>
+</head>
+<body>
+    <h1>51) Faça um aplicativo que leia o preço de 8 produtos. No final, mostre na tela qual foi o maior e qual foi o menor preço digitados.</h1>
+
+    <h2>Este exercício foi feito utilizando prompt, diferente dos outros exercícios em que eu juntei html e js!</h2>
+
+    <script>
+
+        let c = 1;
+        let maior = 0;
+        let menor = Number.MAX_VALUE;
+        while(c <= 8){
+            let p = parseFloat(prompt(`Digite o valor do produto ${c}`));
+            if( p > maior){
+                maior = p;
+
+            }
+            if(p < menor){
+                menor = p;
+            }
+            c++;
+        }
+        alert(`O preço mais caro digitado foi R$ ${maior.toFixed(2)} e o menor preço digitado foi R$${menor.toFixed(2)}`);
+    </script>
+</body>
+</html>

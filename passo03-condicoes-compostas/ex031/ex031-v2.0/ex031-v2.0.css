@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+
+section{
+    margin: auto;
+    background-color: #85ffd6;
+
+}
+
+h4, h5,p, input{
+    text-align: center;
+}
+
+div#display{
+    margin: auto;
+    background-color: #f5deb3;
+    border-radius: 10px;
+}

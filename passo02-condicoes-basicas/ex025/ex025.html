@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font: normal 1em Arial,Helvetica,serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>25) [DESAFIO] Crie um programa que leia o tamanho de três segmentos de reta. Analise seus comprimentos e diga se é possível formar um triângulo com essas retas. Matematicamente, para três segmentos formarem um triângulo, o comprimento de cada lado deve ser menor que a soma dos outros dois.</h1>
+
+    <h4>(reta1 < reta2 + reta3) e (reta2 < reta1 + reta3) e (reta3 < reta1 + reta2) </h4>
+
+    <div>
+        <p>
+            <label for="reta1">Digite o compriomento da primeira reta:</label>
+            <input type="number" name="reta1" class="reta">
+            <br>
+            <label for="reta2">Digite o comprimento da segunda reta:</label>
+            <input type="number" name="reta2" class="reta">
+            <br>
+            <label for="reta3">Digite o comprimento da terceira reta:</label>
+            <input type="number" name="reta3" class="reta">
+        </p>
+        <p>
+            <input type="button" value="Analisar" id="botao" onclick="triangulo()">
+        </p>
+        <p id="res">
+            <!--Aqui vai a resposta do js-->
+        </p>
+        <div id="img">
+            <img src="" alt="" id="foto">
+        </div>
+    </div>
+    <script src="ex025.js"></script>
+</body>
+</html>

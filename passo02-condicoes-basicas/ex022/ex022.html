@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font: normal 1em Arial,Helvetica,serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>22) Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua situação em relação ao alistamento militar.
+        - Se estiver antes dos 18 anos, mostre em quantos anos faltam para o alistamento.
+        - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do  alistamento.
+    </h1>
+
+    <div>
+        <p>
+            <label for="anoNasc">Digite o ano do seu nascimento:</label>
+            <input type="number" name="anoNasc" id="anoNasc">
+        </p>
+        <p>
+            <input type="button" value="Verificar" id="botao" onclick="verificar()">
+        </p>
+        <p id="res"></p>
+    </div>
+    <script src="ex022.js"></script>
+</body>
+</html>

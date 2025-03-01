@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            background-image: url(imagens/wallpaper005.jpg);
+            background-size: 100px 100px;
+            background-position: center center;
+            background-repeat: repeat;
+        }
+
+        h4{
+            text-align: center;
+            font-size: 1em;
+        }
+
+        div{
+            margin: auto;
+            height: 50vh;
+            width: 500px;
+            background-color: brown;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>58) Faça um algoritmo que leia a idade de vários alunos de uma turma. O programa vai parar quando for digitada a idade 999. No final, mostre quantos alunos existem na turma e qual é a média de idade do grupo.</h1>
+
+    <h4>Clique no retângulo 2x para iniciar o programa</h4>
+    <div id="res" ondblclick="display()">
+
+    </div>
+
+    <script>
+        function display(){
+        let res = document.getElementById('res');
+
+
+        let alunos = 0;
+        let idade = 0;
+        let soma = 0;
+        let c = 0;
+
+        idade = parseInt(prompt(`Digite a idade do aluno  (Para parar o programa digite 999)`));
+        while( idade !== 999){
+            soma = soma + idade;
+            c++;
+            idade = parseInt(prompt(`Digite a idade do aluno (Para parar o programa digite 999)`));
+            alunos = alunos + 1;
+        }
+
+        let media_idade = soma / alunos;
+        res.innerHTML  += `<p>Existem ${alunos} aluno(s) na turma</p>`;
+        res.innerHTML += `<p>A soma total da idade dos alunos é ${soma} anos</p>`;
+        res.innerHTML += `A média de idades dos alunos é ${media_idade.toFixed(2)}`;
+
+        }
+    </script>
+</body>
+</html>

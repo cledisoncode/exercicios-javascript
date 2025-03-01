@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+        div#container{
+            background-color: #ffe4c4;
+            margin: auto;
+            height: 400px;
+            text-align: center;
+        }
+
+        div#container_principal{
+            margin-top: 100px;
+        }
+        div#container2{
+            margin-top: 100px;
+            
+        }
+
+       
+
+    
+    </style>
+</head>
+<body>
+    <h1> 31) [DESAFIO] Crie um jogo de JoKenPo (Pedra-Papel-Tesoura)</h1>
+    <h3>Jogo de JoKenPo</h3>
+
+    <div id="container">
+        <div id="container1">
+            <p>
+                <h4>Jogador1</h4>
+                <input type="radio" name="option1" class="option1" checked>
+                <label for="Pedra">Pedra</label>
+                <input type="radio" name="option1" class="option1" checked>
+                <label for="Papel">Papel</label>
+                <input type="radio" name="option1" class="option1" checked>
+                <label for="Tesoura">Tesoura</label>
+            </p>
+        </div>
+
+        <div id="container_principal">
+                <input type="button" value="Jogar" id="button"onclick="jogar()">
+                <p id="res">
+                    <!--Aqui vai a esposta do js-->
+                </p>
+        </div>
+
+        <div id="container2">
+            <p>
+                <h4>Jogador2</h4>
+                <input type="radio" name="option2" class="option2" checked>
+                <label for="Pedra">Pedra</label>
+                <input type="radio" name="option2" class="option2" checked>
+                <label for="Papel">Papel</label>
+                <input type="radio" name="option2" class="option2" checked>
+                <label for="Tesoura">Tesoura</label>
+            </p>
+        </div>
+    </div>
+
+    <script src="ex031.js"></script>
+
+    <!--FIZ ESSE EXERCICIO COM BASE DO QUE EU SEI ATÉ AGORA DE HTML,CSS E JS.CONFORME EU ADQUIRIR MAIS CONHECIMENTO, VOU APRIMORÁ-LO-->
+</body>
+</html>

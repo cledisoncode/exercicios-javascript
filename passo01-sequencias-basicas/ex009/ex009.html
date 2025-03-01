@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algotimo</title>
+    <style>
+    
+    body{
+        font: normal 1.1em Arial,Helvetica,serif;
+    }
+
+        #botao{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>9) Faça um algoritmo que leia quanto dinheiro uma pessoa tem na carteira (em R$) e mostre quantos dólares ela pode comprar. Considere  R$3,45 = US$1,00.</h1>
+
+    <label for="reais">Digite quantos  reais você tem na sua carteira:</label>
+    R$ <input type="number" name="dinheiro" id="dinheiro">
+    <input type="button" value="Converter" id="botao" onclick="converter()">
+    <p id="res"></p>
+
+    <script>
+        function converter(){
+            var txtn = document.getElementsByTagName('input')[0]
+            var resultado =  document.getElementById('res');
+            
+            var real = Number(txtn.value)
+            var dolar = real / 3.45;
+            resultado.innerHTML = `<p>A quantia de R$<strong> ${real.toFixed(2)}</strong> reais em <strong>dólar</strong> é igual a =<strong> U$ ${dolar.toFixed(2)}</strong> dólares</p>`
+
+
+        }
+    </script>
+
+</body>
+</html>

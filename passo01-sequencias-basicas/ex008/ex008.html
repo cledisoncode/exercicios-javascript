@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        #botao{
+            margin: 20px 0px 0px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>8) Desenvolva um programa que leia uma distância em metros e mostre os valores relativos em outras medidas.Versão 2.0</h1>
+
+    <label for="distancia">Digite a distância em metros:</label>
+    <input type="number" name="distancia" id="distancia"> metros;
+    <br>
+    <input type="button" value="Calcular" id="botao" onclick="calcular()" >
+    <br>
+    <p id="res">
+
+    </p>
+
+    <script>
+        function calcular(){
+        var txtn = document.getElementById('distancia');
+        var resultado = document.getElementById('res');
+        
+        metro = Number(txtn.value);
+        kilo = metro / 1000;
+        hecto = metro / 100;
+        deca = metro / 10;
+        deci =  metro * 10;
+        centi = metro * 100;
+        mili =  metro * 1000;
+
+
+        resultado.innerHTML = `<p>A distância que você digitou foi:<strong> ${metro} m</strong></p>`;
+
+        resultado.innerHTML += `<p>A distância de<strong> ${metro} metros</strong> em <strong>Quilômetro</strong> é igual a = <strong>${kilo}</strong> Km</p>`;
+
+        resultado.innerHTML += `<p>A distância de<strong> ${metro} metros</strong> em <strong>Hectômetro</strong> é igual a =<strong> ${hecto}</strong> Hm</p>`;
+
+        resultado.innerHTML += `<p>A distância de<strong> ${metro} metros</strong> em <strong>Decâmetro</strong> é igual a =<strong> ${deca}</strong> Dam</p>`;
+
+        resultado.innerHTML += `<p>A distância de <strong>${metro} metros</strong> em <strong>Decímetro</strong> é igual a = <strong>${deci}</strong>Dm</p>`;
+
+        resultado.innerHTML += `<p>A distância de <strong>${metro} metros</strong> em <strong>Centímetro</strong> é igual a = <strong>${centi}</strong>Cm</p>`;
+
+        resultado.innerHTML += `<p>A distância de <strong>${metro} metros</strong> em <strong>Milímetro</strong> é igual a =<strong> ${mili}</strong>Mm</p>`;
+        }
+
+    </script>
+</body>

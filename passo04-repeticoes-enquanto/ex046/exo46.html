@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font: bold 1em Arial,Helvetica
+        }
+        h4{
+            text-align: center;
+            color: chartreuse;
+        }
+        div{
+            margin: auto;
+            background-color: #5dcccc;
+            width: 500px;
+            height:300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>46) Crie um programa que calcule e mostre na tela o resultado da soma entre 6 + 8 + 10 + 12 + 14 + ... + 98 + 100.</h1>
+
+    <h4>Clique no Retângulo</h4>
+    <div>
+        <p id="res">
+
+        </p>
+    </div>
+
+    <script>
+        let div = document.getElementsByTagName('div')[0];
+        div.addEventListener('click', clique);
+
+        function clique(){
+            div.style.padding = '20px';
+            
+            let res = document.getElementById('res');
+            
+            let c  = 6;
+            let soma = 0
+            while( c <= 100){
+                soma += c;
+                res.innerHTML += `${c} `;
+                if(c < 100){
+                    res.innerHTML += " + "
+                }
+                c += 2;
+            }
+            res.innerHTML += ` = ${soma}`;
+            res.innerHTML += `<strong><br> A soma entre os valores existentes de 6 até 100, pulando de 2 em 2 é = ${soma}</strong>`;
+        }
+
+    </script>
+</body>
+</html>

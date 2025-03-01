@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+
+        div{
+            margin: auto;
+            background-image:linear-gradient(to right, #0000ff , #008000);
+            height: 50vh;
+            width: 500px;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>57) Desenvolva um aplicativo que leia o salário e o sexo de vários funcionários. No final, mostre o total de salários pagos aos homens e o total pago às mulheres. O programa vai perguntar ao usuário se ele quer continuar ou não sempre que ler os dados de um funcionário.</h1>
+
+    <h4 style="text-align: center;">Clique 2x no retângulo</h4>
+    <div id="res">
+
+    </div>
+
+    <script>
+        let div = document.getElementsByTagName('div')[0];
+        div. addEventListener('dblclick',clique);
+
+        function clique(){
+            let c = 0;
+            let homens = 0;
+            let salario_h = 0;
+            let mulheres = 0;
+            let salario_m = 0;
+
+            let resposta = 's';
+            while(resposta.toLocaleLowerCase() == 's'){
+                c++;
+                let salario = parseFloat(prompt(`Qual o salário do funcionário ${c}?`));
+                let sexo = prompt(`Qual o sexo do funcionário ${c} (M | F) ?`);
+
+                if(sexo.toLocaleLowerCase() == 'f'){
+                    mulheres = mulheres + 1;
+                    salario_m = salario_m + salario;
+
+                } else if(sexo.toLocaleLowerCase() == 'm') {
+                    homens = homens + 1;
+                    salario_h = salario_h + salario;
+                }
+
+                resposta = prompt(`Quer continuar( S | N )?`);
+            } 
+
+            res.style.textAlign = 'center';
+            res.innerHTML += `<p>Foram cadastrados ${homens} homen(s) e O valor total de salário pago aos homens é R$ ${salario_h.toFixed(2)} </p>`;
+
+            res.innerHTML += `<p>Foram cadastradas ${mulheres} mulhere(s)e o valor total de salário pago às mulheres é R$ ${salario_m.toFixed(2)}</p>`;
+        }
+    </script>
+</body>
+</html>

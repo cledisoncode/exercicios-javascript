@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+</head>
+<body>
+    <h1>21) Faça um algoritmo que leia um determinado ano e mostre se ele é ou não BISSEXTO.</h1>
+
+    <style>
+        body{ font: normal 1.2em Arial,Helvetica,serif;
+        }
+    </style>
+    <div>
+        <p>
+            <label for="ano">Digite um ano:</label>
+            <input type="number" name="ano" id="ano">
+        </p>
+        <p>
+            <input type="button" value="Verificar" id="botao" onclick="verificar()">
+        </p>
+        <p id="res">
+
+        </p>
+    </div>
+
+    <script>
+        function verificar(){
+            var txta = document.getElementById('ano');
+            var res = document.getElementById('res');
+            var txtAno = Number(txta.value);
+
+            if((txtAno % 4 == 0 && txtAno % 100 != 0) || txtAno % 400 == 0){
+                res.innerHTML = `<p><strong>${txtAno}. </strong>É um ano Bissexto</p>`
+            }else {
+                res.innerHTML = `<p><strong>${txtAno}</strong>. Não é um ano Bissexto</p>`
+        }
+    }
+    </script>
+</body>
+</html>

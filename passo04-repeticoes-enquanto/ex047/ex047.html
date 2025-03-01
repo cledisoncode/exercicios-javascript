@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font: bolder 1em Arial,Helvetica;
+        }
+
+        h4{
+            text-align: center;
+            color: blueviolet;
+        }
+
+        div{
+            background-color: #5f9ea0;
+            width: 500px;
+            height: 300px;
+            margin: auto;
+        }
+
+        p{
+            line-height: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>47) Desenvolva um aplicativo que mostre na tela o resultado da expressão 500 + 450 + 400 + 350 + 300 + ... + 50 + 0</h1>
+
+    <h4>Clique no Retângulo</h4>
+    <div>
+        <p id="res">
+
+        </p>
+    </div>
+
+    <script>
+        let div = document.getElementsByTagName('div')[0];
+        div.addEventListener('click', passar_mouse);
+
+        function passar_mouse (){
+            div.style.padding = '15px'
+            let res = document.querySelector('p#res');
+            
+
+            let c = 500;
+            let soma = 0;
+            while(c >= 0){
+                soma += c;
+                res.innerHTML += `${c} `;
+                if( c > 0){
+                    res.innerHTML += ` + `;
+                }
+                c -= 50;
+            }
+            res.innerHTML += `= ${soma}`
+        }
+    </script>
+</body>
+</html>

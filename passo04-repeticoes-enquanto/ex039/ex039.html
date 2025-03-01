@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        h4{
+            text-align: center;
+            color: #dc143c;
+        }
+        div{
+            margin: auto;
+            background-color: beige;
+            width: 600px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>39) Faça um algoritmo que mostre na tela a seguinte contagem:
+        10 9 8 7 6 5 4 3 Acabou!</h1>
+
+        <h4>Clique no Retângulo</h4>
+        <div>
+            <p id="res">
+
+            </p>
+        </div>
+
+        <script>
+            let div = document.getElementsByTagName('div')[0];
+            div.addEventListener('click', clique);
+
+            function clique(){
+                let res = document.querySelector('p#res');
+                res.style.textAlign = 'center';
+                res.style.lineHeight = '200px';
+
+                let c = 10;
+                while(c >= 3){
+                    res.innerHTML += `${c} \u{1F920} `;
+                    c--;
+                }
+                res.innerHTML += `Acabou!`
+
+            }
+        </script>
+</body>
+</html>

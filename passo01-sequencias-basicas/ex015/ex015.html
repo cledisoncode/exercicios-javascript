@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.1em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>15) Crie um programa que leia o número de dias trabalhados em um mês e mostre o salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25 por hora trabalhada.</h1>
+
+    <label for="diaTrabalhado">Por quantos dias você trabalhou no mês?</label>
+    <input type="number" name="dia" id="dia">
+    <br>
+    <input type="button" value="Calcular Salário" onclick="calcular()">
+    <p id="res">
+    
+    </p>
+
+    <script>
+        function calcular(){
+            var txtd = document.getElementById('dia')
+            var res = document.getElementById('res')
+
+            var dia =  Number(txtd.value)
+            var salario = dia * 8 * 25
+
+            res.innerHTML = `<p>Você trabalhou por <strong>${dia} dia(s)</strong> e 8 horas em cada dia. Seu salário é de R$ <strong>${salario.toFixed(2)}</strong></p>`
+    
+        }
+    </script>
+    
+</body>
+</html>

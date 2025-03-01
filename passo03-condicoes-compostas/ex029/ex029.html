@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font: normal 1em Arial,Helvetica,serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>29) Desenvolva um programa que leia o nome de um funcionário, seu salário,  quantos anos ele trabalha na empresa e mostre seu novo salário, reajustado de  acordo com a tabela a seguir:
+    - Até 3 anos de empresa: aumento de 3%
+    - entre 3 e 10 anos: aumento de 12.5%
+    - 10 anos ou mais: aumento de 20%</h1>
+
+    <div>
+        <p>
+            <label for="nome">Digite seu nome:</label>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <label for="salario">Digite seu salario: R$</label>
+            <input type="number" name="salario" id="salario">
+            <br>
+            <label for="anos_trabalhando">A quantos anos você trabalha na empresa?</label>
+            <input type="number" name="anos_trabalhando" id="anos_trabalhando">
+        </p>
+        <p>
+            <input type="button" value="Calcular" onclick="calcular()" id="button">
+        </p>
+        <p id="res">
+
+        </p>
+    </div>
+    <script src="ex029.js"></script>
+</body>
+</html>

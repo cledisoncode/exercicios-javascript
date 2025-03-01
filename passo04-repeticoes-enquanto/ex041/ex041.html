@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        h4{
+            text-align: center;
+            color: fuchsia;
+        }
+        div{
+            background-color: #5f9ea0;
+            margin: auto;
+            width: 600px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>41) Desenvolva um programa que mostre na tela a seguinte contagem:
+        100 95 90 85 80 ... 0 Acabou!; </h1>
+
+        <h4>Clique no Retângulo</h4>
+        <div>
+            <p id="res"></p>
+        </div>
+
+        <script>
+            let div = document.getElementsByTagName('div');
+            div[0].addEventListener('click', clique);
+
+            function clique(){
+                let res = document.getElementById('res');
+                res.style.textAlign = 'center';
+                res.style.lineHeight = '100px';
+
+                res.innerHTML = '';
+                let c = 100;
+                while( c >= 0){
+                    res.innerHTML += `${c} \u{1F345}`;
+                    c -= 5;
+                }
+                res.innerHTML += `Acabou!`;
+            }
+        </script>
+
+    
+</body>
+</html>

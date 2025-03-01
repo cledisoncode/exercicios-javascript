@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+
+    <style>
+        body{
+            font: normal 1.3em Arial,Helvetica;
+        }
+        #numero{
+            margin-top: 10px;
+            margin-bottom: 15px;
+            height: 20px;
+        }
+
+        #botao{
+            height: 30px;
+            width: 70px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>7) Crie um algoritmo que leia um número real e mostre na tela o seu dobro e a sua terça parte.</h1>
+
+    <label for="number">Digite um número:</label>
+    <br>
+    <input type="number" name="numero" id="numero">
+    <br>
+    <input type="button" value="Calcular" id="botao" onclick="calcular()">
+    <br>
+    <p id="res">
+
+    </p>
+
+    <script>
+        function calcular(){
+            var txtn = document.getElementById('numero');
+            var resultado = document.querySelector('p#res');
+
+            var tn = Number.parseFloat(txtn.value);
+            var multi = tn * 2;
+            var div = tn / 3;
+
+            resultado.innerHTML = `<p>O número digitado foi: <strong>${tn}</strong></p>`;
+
+            resultado.innerHTML += `<p>O <strong>dobro</strong> de<strong> ${tn}</strong> é igual a = <strong> ${multi}</strong></p>`;
+
+            resultado.innerHTML += `<p>A<strong> terça parte</strong> de <strong>${tn}</strong> é igual a = <strong> ${div}</strong></p>`
+        }
+    </script>
+</body>
+</html>

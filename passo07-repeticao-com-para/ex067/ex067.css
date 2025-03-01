@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body{
+    font: normal normal 1em Arial,Helvetica;
+    background-color: black;
+    background-image: url(imagens/pattern002.png);
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    color: rgb(15, 0, 226);
+}
+
+div#conteudo{
+    height: 400px;
+    width: 300px;
+    background-color: #7fffd4;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+input{
+    margin: 5px;
+}

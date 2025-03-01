@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+         body{
+            font: normal 16px Arial,Helvetica,serif;
+            
+        }
+        div{
+            background-color: bisque;
+            margin: auto;
+            padding: 10px;
+            width: 700px;
+            border-radius: 10px 20px 10px 20px;
+            text-align: center;
+        }
+
+        input{
+            margin-top: 10px;
+        }
+
+        img{
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>
+        35) Uma empresa de aluguel de carros precisa cobrar pelos seus serviços. O aluguel de um carro custa R$90 por dia para carro popular e R$150 por dia para carro de luxo. Além disso, o cliente paga por Km percorrido. Faça um programa que leia o tipo de carro alugado (popular ou luxo), quantos dias de aluguel e quantos Km foram percorridos. No final mostre o preço a ser pago de acordo com a tabela a seguir:
+            - Carros populares (aluguel de R$90 por dia)
+            - Até 100Km percorridos: R$0,20 por Km
+            - Acima de 100Km percorridos: R$0,10 por Km
+            - Carros de luxo (aluguel de R$150 por dia)
+            - Até 200Km percorridos: R$0,30 por Km
+            - Acima de 200Km percorridos: R$0,25 por Km
+    </h1>
+
+    <div  class="container">
+            <p>
+                <h3>Qual tipo de carro você alugou?</h3>
+                <input type="radio" name="carros" id="carro_popular" checked>
+                <label for="carro_popular">Carro Popular</label>
+                <input type="radio" name="carros" id="carro_luxo" checked>
+                <label for="carro_luxo">Carro de Luxo</label>
+            </p>
+            <p>
+                <label for="dias_alugado">Por quantos dias você alugou o carro?</label>
+                <input type="number" name="dias_alugado" id="dias_alugado">
+                <br>
+                <label for="km_percorridos">Quantos quilômetros você percorreu?(km)</label>
+                <input type="number" name="km_percorridos" id="km_percorridos">
+            </p>
+            <p>
+                <input type="button" value="Calcular" onclick="calcular()" id="button">
+            </p>
+            <p id="res">
+                <!--Aqui vai a resposta do js-->
+            </p>
+            <p>
+                <img src="" alt="" id="foto">
+            </p>
+    </div>
+    <script src="ex035.js"></script>
+</body>
+</html>

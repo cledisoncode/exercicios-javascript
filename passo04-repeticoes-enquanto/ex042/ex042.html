@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        h4{
+            text-align: center;
+        }
+        div{
+            background-color: antiquewhite;
+            margin: auto;
+            width: 600px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>42) Faça um algoritmo que pergunte ao usuário um número inteiro e positivo qualquer e mostre uma contagem até esse valor:
+    Ex: Digite um valor: 35
+    Contagem: 1 2 3 4 5 6 7 ... 33 34 35 Acabou!</h1>
+    <h4>Digite um número inteiro e positivo: <input type="number" name="num" id="txtn"></h4>
+    <div id="div">
+        Contagem:
+        <p id="res">
+
+        </p>
+    </div>
+
+    <script>
+        let div = document.getElementById('div');
+        div.addEventListener('click',clique);
+
+    function clique(){
+        let num = document.getElementById('txtn');
+        let res = document.querySelector('p#res');
+        let n = Number(num.value);
+
+        if(num.value.length == 0){
+            alert('[ERRO], Digite um numero')
+        } else { 
+            res.innerHTML = '';
+            let c = 1;
+            while(c <= n){
+                res.innerHTML += `${c} \u{1F455}`;
+                c++;
+            }
+            res.innerHTML += `Acabou! `;
+    }
+}
+    </script>
+</body>
+</html>

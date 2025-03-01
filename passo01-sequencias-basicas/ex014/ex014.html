@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.1em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input{
+            margin-top: 20px;
+        }
+    </style>
+    <script src="ex014.js"></script>
+</head>
+<body>
+    <h1>14) A locadora de carros precisa da sua ajuda para cobrar seus serviços. Escreva  um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço total a pagar, sabendo que o carro custa R$90 por dia e R$0,20 por Km rodado.</h1>
+
+    <label for="diasAlugado">Por quantos dias você alugou o carro? </label>
+    <input type="number" name="diasAlugado" id="diasAlugado">
+    <br>
+    <label for="kmRodados">Quantos quilômetros você percorreu com o carro?</label> 
+    <input type="number" name="kmRodados" id="kmRodados">
+    <br>
+    <input type="button" name="botao" id="botao" value="Calcular" onclick="calcular()">
+    <p id="res">
+
+    </p>
+
+</body>
+</html>

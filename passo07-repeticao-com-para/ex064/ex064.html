@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        div#container{
+            background-color: black;
+            background-image: url(./imagens/wallpaper007.jpg);
+            background-size: 100% 100% ;
+            padding: 5px;
+            height: 95vh;
+            background-attachment: fixed;
+        }
+
+        h1{
+            color: red;
+        }
+
+        p#res{
+            height: 280px;
+            width: 380px;
+            background-color: #f30404d2;
+            margin: auto;
+            border: 5px solid #0000ff;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+            <h1>
+                64) Desenvolva um programa usando a estrutura “para” que mostre na tela a seguinte contagem: 0 5 10 15 20 25 30 35 40 Acabou!
+            </h1>
+            <p id="res" ondblclick="display()">
+                <!--Aqui vai a respostar do js-->
+            </p>
+    </div>
+
+    <script>
+        function display() {
+            const res = document.querySelector('p#res');
+            res.style.textAlign = "center";
+            res.style.lineHeight = "280px";
+            res.style.color = "white"
+
+            for(let c = 0; c <= 40; c += 5){
+                res.innerHTML += `${c} `;
+            }
+            res.innerHTML += `Acabou!`;
+            
+
+        }
+    </script>
+</body>
+</html>

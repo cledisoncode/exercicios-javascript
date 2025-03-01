@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    font: normal bolder 1em Arial,Helvetica;
+    background-color: black;
+    background-image:url(imagens/wallpaper002.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+h1{
+    color: #ff0000;
+}
+
+main#conteudo{
+    margin: auto;
+    height: 500px;
+    width: 300px;
+    background-color: cadetblue;
+    background-image: url(imagens/wallpaper001.jpg);
+    background-position: center center;
+    background-size: 100px 100px;
+}
+
+p{
+    color: greenyellow;
+    text-align: center;
+    padding: 10px;
+}

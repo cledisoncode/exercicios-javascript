@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font: normal 1em Arial,serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>28) Faça um programa que leia a largura e o comprimento de um terreno retangular, calculando e mostrando a sua área em m². O programa também devemostrar a classificação desse terreno, de acordo com a lista abaixo:
+    - Abaixo de 100m² = TERRENO POPULAR
+    - Entre 100m² e 500m² = TERRENO MASTER
+    - Acima de 500m² = TERRENO VIP</h1>
+
+    <div>
+        <p>
+            <label for="largura">Digite a largura do terreno (m):</label>
+            <input type="number" name="largura" id="largura">
+            <br>
+            <label for="comprimento">Digite o comprimento do terreno(m):</label>
+            <input type="number" name="comprimento" id="comprimento">
+        </p>
+        <p>
+            <input type="button" value="Calcular" onclick="calcular()" id="button">
+        </p>
+        <p id="res"></p>
+    </div>
+
+    <script>
+        function calcular(){
+        var txtl  = document.getElementById("largura");
+        var txtc = document.getElementById("comprimento");
+        var largura = Number(txtl.value);
+        var comprimento = Number(txtc.value);
+        var res = document.querySelector("p#res");
+
+        var area  = largura * comprimento;
+
+        if(area < 100){
+            res.innerHTML = `É um terreno popular!. E sua área é de ${area} m²`
+
+        }else if(area >= 100 && area <= 500){
+            res.innerHTML = `É um terreno master!. E sua área é de ${area} m²`
+
+        }else if(area > 500){
+            res.innerHTML = `É um terreno vip!. E sua área é de ${area} m²`;
+        }
+    }
+    </script>
+</body>
+</html>

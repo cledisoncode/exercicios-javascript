@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        h4{
+            text-align: center;
+        }
+        div{
+            background-color: #c9c923;
+            margin: auto;
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>43) Desenvolva um algoritmo que mostre uma contagem regressiva de 30 até 1, marcando os números que forem divisíveis por 4, exatamente como mostrado abaixo:
+        30 29 [28] 27 26 25 [24] 23 22 21 [20] 19 18 17 [16]...</h1>
+
+        <h4>Clique no Retângulo</h4>
+        <div>
+            <p id="res"></p>
+        </div>
+
+        <script>
+            let div = document.getElementsByTagName('div')[0];
+            div.addEventListener('click',clique);
+
+            function clique(){
+                let res = document.getElementById('res');
+                res.style.textAlign = `center
+                `;
+
+                res.innerHTML = ` `;
+                let c = 30;
+                while(c >= 1){
+                    if( c % 4 == 0){
+                        res.innerHTML += `[ ${c} ]`;
+                        c--;
+
+                    } else {
+                    res.innerHTML += `${c}, `;
+                    c--;
+                    
+                    }
+                }
+            }
+        </script>
+</body>
+</html>

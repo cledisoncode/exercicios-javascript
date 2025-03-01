@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <style>
+        body{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.2em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--Fiz melhor e agora o usuário colocar o valor do desconto seja ele qual for e descobre o preco já co desconto-->
+    <h1>13) Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o seu novo salário, com 15% de aumento.</h1>
+
+    <label for="precoprduto">Digite o preço do produto:</label>
+    <input type="number" name="precoprduto" id="precoproduto">
+    <br>
+    <label for="valorAumento">Digite o valor do aumento:</label>
+    <input type="number" name="aumento" id="aumento">
+    <br>
+    <input type="button" value="Calcular Aumento" onclick="calcular()">
+    <p id="res">
+
+    </p>
+
+    <script>
+        function calcular(){
+        var txtp =  document.querySelector('input#precoproduto')
+        var txta =  document.querySelector('input#aumento')
+        var resultado =  document.getElementById('res')
+
+        var preco=  Number(txtp.value)
+        var aumento =  Number(txta.value)
+        var precoAumento = preco + (preco * aumento / 100)
+
+        resultado.innerHTML = `<p>O preço do produto é: <strong>R$${preco.toFixed(2)}</strong></p>`;
+
+        resultado.innerHTML += `<p>O valor do <strong>aumento</strong> é de <strong>${aumento}%</strong></p>`
+
+        resultado.innerHTML += `<p>O valor do <strong>produto com aumento</strong> é dado  pela expressão <strong>precoAumento = preco + (preco * aumento / 100)</strong>. Que nesse caso resulta em : R$<strong>${precoAumento.toFixed(2)}</strong></p>`
+
+        }
+    </script>
+</body>
+</html>

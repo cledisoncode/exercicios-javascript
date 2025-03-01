@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+</head>
+<body>
+    <h1>36) Um programa de vida saudável quer dar pontos atividades físicas que podem ser trocados por dinheiro. O sistema funciona assim:
+         - Cada hora de atividade física no mês vale pontos
+         - até 10h de atividade no mês: ganha 2 pontos por hora
+         - de 10h até 20h de atividade no mês: ganha 5 pontos por hora
+         - acima de 20h de atividade no mês: ganha 10 pontos por hora
+         - A cada ponto ganho, o cliente fatura R$0,05 (5 centavos) 
+        Faça um programa que leia quantas horas de atividade uma pessoa teve por mês, calcule e mostre quantos pontos ela teve e quanto dinheiro ela conseguiu ganhar.</h1>
+
+        <div>
+            <p>
+                <label for="horas">Quantas horas de atividade física você faz por mês?</label>
+                <input type="number" name="horas" id="horas">
+            </p>
+            <p>
+                <input type="button" value="Calcular" id="button" onclick="calcular()">
+            </p>
+            <p id="res">
+
+            </p>
+        </div>
+        <script src="ex036.js"></script>
+</body>
+</html>

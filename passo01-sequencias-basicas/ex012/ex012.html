@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo</title>
+    <script src="ex012.js" defer></script>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<!--Fiz melhor e agora o usuário colocar o valor do desconto seja ele qual for e descobre o preco já co desconto-->
+    <h1>12)Crie um programa que leia o preço de um produto, calcule e mostre o seu PREÇO PROMOCIONAL, com 5% de desconto.</h1>
+
+
+    <label for="produto">Digite o preço do produto: R$</label>
+    <input type="number" name="precoProduto" id="precoProduto">
+    <br>
+    <label for="desconto">Digite o preço do desconto:</label>
+    <input type="number" name="desconto" id="desconto">%
+    <br>
+    <input type="button" value="Calcular Desconto" id="botao" onclick="calcular()">
+    <p id="res">
+
+    </p>
+
+</body>
+</html>
