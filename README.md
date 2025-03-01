@@ -1,2 +1,2 @@
 # exercicios-javascript
- lista de exercicios
+ lista de exercicios de javascript resolvidos
