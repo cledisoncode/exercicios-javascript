@@ -2,7 +2,7 @@ PASSO 01 - SEQUÊNCIAS BÁSICAS
 
 1) Escreva um programa que mostre na tela a mensagem "Olá, Mundo!" - OK
 
-2) Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boasvindas para ela: 
+2) Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas vindas para ela: 
 Ex:
 Qual é o seu nome? João da Silva
 Olá João da Silva, é um prazer te conhecer!
@@ -95,13 +95,11 @@ PASSO 02 - CONDIÇÕES BÁSICAS
 
 21) Faça um algoritmo que leia um determinado ano e mostre se ele é ou não BISSEXTO. - OK
 
-22) Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua 
-situação em relação ao alistamento militar.
+22) Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua situação em relação ao alistamento militar.
  - Se estiver antes dos 18 anos, mostre em quantos anos faltam para o alistamento.
  - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do alistamento. - OK
 
-23) Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos para todos, mas especialmente para mulheres. Faça um programa que leia nome, sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo 
-que:
+23) Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos para todos, mas especialmente para mulheres. Faça um programa que leia nome, sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo que:
  - Homens ganham 5% de desconto
  - Mulheres ganham 13% de desconto
 
@@ -116,42 +114,35 @@ que:
 
 PASSO 03 - CONDIÇÕES COMPOSTAS
 
-26) Escreva um algoritmo que leia dois números inteiros e compare-os, mostrando 
-na tela uma das mensagens abaixo:
+26) Escreva um algoritmo que leia dois números inteiros e compare-os, mostrando na tela uma das mensagens abaixo:
  - O primeiro valor é o maior
  - O segundo valor é o maior
  - Não existe valor maior, os dois são iguais 
 
  - OK
 
-27) Crie um programa que leia duas notas de um aluno e calcule a sua média, 
-mostrando uma mensagem no final, de acordo com a média atingida:
+27) Crie um programa que leia duas notas de um aluno e calcule a sua média, mostrando uma mensagem no final, de acordo com a média atingida:
  - Média até 4.9: REPROVADO
  - Média entre 5.0 e 6.9: RECUPERAÇÃO
  - Média 7.0 ou superior: APROVADO
 
  -OK
 
-28) Faça um programa que leia a largura e o comprimento de um terreno 
-retangular, calculando e mostrando a sua área em m². O programa também 
-devemostrar a classificação desse terreno, de acordo com a lista abaixo:
+28) Faça um programa que leia a largura e o comprimento de um terreno retangular, calculando e mostrando a sua área em m². O programa também devemostrar a classificação desse terreno, de acordo com a lista abaixo:
  - Abaixo de 100m² = TERRENO POPULAR
  - Entre 100m² e 500m² = TERRENO MASTER
  - Acima de 500m² = TERRENO VIP
 
  -OK
 
-29) Desenvolva um programa que leia o nome de um funcionário, seu salário, 
-quantos anos ele trabalha na empresa e mostre seu novo salário, reajustado de 
-acordo com a tabela a seguir:
+29) Desenvolva um programa que leia o nome de um funcionário, seu salário, quantos anos ele trabalha na empresa e mostre seu novo salário, reajustado de acordo com a tabela a seguir:
  - Até 3 anos de empresa: aumento de 3%
  - entre 3 e 10 anos: aumento de 12.5%
  - 10 anos ou mais: aumento de 20%
 
  - OK
 
-30) [DESAFIO] Refaça o algoritmo 25, acrescentando o recurso de mostrar que tipo 
-de triângulo será formado: 
+30) [DESAFIO] Refaça o algoritmo 25, acrescentando o recurso de mostrar que tipo de triângulo será formado: 
  - EQUILÁTERO: todos os lados iguais
  - ISÓSCELES: dois lados iguais
  - ESCALENO: todos os lados diferentes
@@ -167,9 +158,7 @@ de triângulo será formado:
 
 -OK
 
-34) O Índice de Massa Corpórea (IMC) é um valor calculado baseado na altura e no 
-peso de uma pessoa. De acordo com o valor do IMC, podemos classificar o 
-indivíduo dentro de certas faixas.
+34) O Índice de Massa Corpórea (IMC) é um valor calculado baseado na altura e no peso de uma pessoa. De acordo com o valor do IMC, podemos classificar o indivíduo dentro de certas faixas.
  - abaixo de 18.5: Abaixo do peso
  - entre 18.5 e 25: Peso ideal
  - entre 25 e 30: Sobrepeso
@@ -189,8 +178,7 @@ Obs: O IMC é calculado pela expressão peso/altura² (peso dividido pelo quadra
 
  -OK
 
-36) Um programa de vida saudável quer dar pontos atividades físicas que podem 
-ser trocados por dinheiro. O sistema funciona assim:
+36) Um programa de vida saudável quer dar pontos atividades físicas que podem ser trocados por dinheiro. O sistema funciona assim:
  - Cada hora de atividade física no mês vale pontos
  - até 10h de atividade no mês: ganha 2 pontos por hora
  - de 10h até 20h de atividade no mês: ganha 5 pontos por hora
@@ -233,15 +221,16 @@ Ex: Digite um valor: 35
 Contagem: 1 2 3 4 5 6 7 ... 33 34 35 Acabou! - 0K
 
 43) Desenvolva um algoritmo que mostre uma contagem regressiva de 30 até 1, marcando os números que forem divisíveis por 4, exatamente como mostrado abaixo:
-30 29 [28] 27 26 25 [24] 23 22 21 [20] 19 18 17 [16]... -OK;
+30 29 [28] 27 26 25 [24] 23 22 21 [20] 19 18 17 [16]... 
+-OK;
+
 44) Crie um algoritmo que leia o valor inicial da contagem, o valor final e o incremento, mostrando em seguida todos os valores no intervalo:
 Ex: Digite o primeiro Valor: 3
 Digite o último Valor: 10
 Digite o incremento: 2
 Contagem: 3 5 7 9 Acabou! -OK;
 
-45) O programa acima vai ter um problema quando digitarmos o primeiro valor maior que o último. Resolva esse problema com um código que funcione em qualquer 
-situação. - OK
+45) O programa acima vai ter um problema quando digitarmos o primeiro valor maior que o último. Resolva esse problema com um código que funcione em qualquer situação. - OK
 
 46) Crie um programa que calcule e mostre na tela o resultado da soma entre 6 + 8 + 10 + 12 + 14 + ... + 98 + 100. -OK 
 
@@ -279,8 +268,7 @@ e) Quantas mulheres tem mais de 20 anos
 -OK;
 
 
-54) Desenvolva um aplicativo que leia o peso e a altura de 7 pessoas, mostrando 
-no final:
+54) Desenvolva um aplicativo que leia o peso e a altura de 7 pessoas, mostrando no final:
 a) Qual foi a média de altura do grupo
 b) Quantas pessoas pesam mais de 90Kg
 c) Quantas pessoas que pesam menos de 50Kg tem menos de 1.60m
@@ -357,8 +345,7 @@ PASSO 07 – REPETIÇÃO COM PARA
 
 -OK
 
-66) Escreva um programa que leia um número qualquer e mostre a tabuada desse 
-número, usando a estrutura “para”.
+66) Escreva um programa que leia um número qualquer e mostre a tabuada desse número, usando a estrutura “para”.
 Ex: Digite um valor: 5
 5 x 1 = 5
 5 x 2 = 10
@@ -366,15 +353,13 @@ Ex: Digite um valor: 5
 
 -OK
 
-67) Faça um programa usando a estrutura “para” que leia um número inteiro 
-positivo e mostre na tela uma contagem de 0 até o valor digitado:
+67) Faça um programa usando a estrutura “para” que leia um número inteiro positivo e mostre na tela uma contagem de 0 até o valor digitado:
 Ex: Digite um valor: 9
 Contagem: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, FIM!
 
 -OK
  
-68) Crie um programa que leia sexo e peso de 8 pessoas, usando a estrutura 
-“para”. No final, mostre na tela:
+68) Crie um programa que leia sexo e peso de 8 pessoas, usando a estrutura “para”. No final, mostre na tela:
 a) Quantas mulheres foram cadastradas
 b) Quantos homens pesam mais de 100Kg
 c) A média de peso entre as mulheres 
@@ -440,27 +425,22 @@ PASSO 08 – VETORES
 -OK
 
 80) Faça um algoritmo que preencha um vetor de 30 posições com números entre 1 e 15 sorteados pelo computador. Depois disso, peça para o usuário digitar um número (chave) e seu programa deve mostrar em que posições essa chave foi encontrada. Mostre também quantas vezes a chave foi sorteada.
+-OK
 
-81) Crie um programa que leia a idade de 8 pessoas e guarde-as em um vetor. No 
-final, mostre:
+81) Crie um programa que leia a idade de 8 pessoas e guarde-as em um vetor. No final, mostre:
 a) Qual é a média de idade das pessoas cadastradas
 b) Em quais posições temos pessoas com mais de 25 anos
 c) Qual foi a maior idade digitada (podem haver repetições)
 d) Em que posições digitamos a maior idade
 
-82) Faça um algoritmo que leia a nota de 10 alunos de uma turma e guarde-as em 
-um vetor. No final, mostre: 
+82) Faça um algoritmo que leia a nota de 10 alunos de uma turma e guarde-as em um vetor. No final, mostre: 
 a) Qual é a média da turma
 b) Quantos alunos estão acima da média da turma
 c) Qual foi a maior nota digitada
 d) Em que posições a maior nota aparece
 
-83) [DESAFIO] Crie uma lógica que preencha um vetor de 20 posições com números 
-aleatórios (entre 0 e 99) gerados pelo computador. Logo em seguida, mostre os 
-números gerados e depois coloque o vetor em ordem crescente, mostrando no final os valores ordenados.
+83) [DESAFIO] Crie uma lógica que preencha um vetor de 20 posições com números aleatórios (entre 0 e 99) gerados pelo computador. Logo em seguida, mostre os números gerados e depois coloque o vetor em ordem crescente, mostrando no final os valores ordenados.
 
 84) Crie um programa que leia o nome e a idade de 9 pessoas e guarde esses valores em dois vetores, em posições relacionadas. No final, mostre uma listagem contendo apenas os dados das pessoas menores de idade.
 
-85) Faça um algoritmo que leia o nome, o sexo e o salário de 5 funcionários e 
-guarde esses dados em três vetores. No final, mostre uma listagem contendo 
-apenas os dados das funcionárias mulheres que ganham mais de R$5 mil.
+85) Faça um algoritmo que leia o nome, o sexo e o salário de 5 funcionários e guarde esses dados em três vetores. No final, mostre uma listagem contendo apenas os dados das funcionárias mulheres que ganham mais de R$5 mil.

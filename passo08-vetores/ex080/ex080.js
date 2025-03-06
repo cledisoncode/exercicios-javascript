@@ -10,7 +10,7 @@ function verificar() {
     let vetorNumeroEncontrado = [];
     let posicaoNumeroEncontrado = [];
 
-    for(let i = 0; i < vetorNumerosSorteados.length;i++){
+    for(let i = 0; i < vetorNumerosSorteados.length; i++){
         if(vetorNumerosSorteados[i] === Number(num.value)) {
             vetorNumeroEncontrado.push(vetorNumerosSorteados[i]);
             posicaoNumeroEncontrado.push(i);
