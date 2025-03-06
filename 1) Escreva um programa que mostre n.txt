@@ -433,6 +433,8 @@ b) Em quais posições temos pessoas com mais de 25 anos
 c) Qual foi a maior idade digitada (podem haver repetições)
 d) Em que posições digitamos a maior idade
 
+-OK
+
 82) Faça um algoritmo que leia a nota de 10 alunos de uma turma e guarde-as em um vetor. No final, mostre: 
 a) Qual é a média da turma
 b) Quantos alunos estão acima da média da turma
