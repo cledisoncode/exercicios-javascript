@@ -1,8 +1,8 @@
 const res =  document.querySelector('p#res');
 
 function listagem() {
-    let vetorNomes = [];
-    let vetorIdades = [];
+    const vetorNomes = [];
+    const vetorIdades = [];
     let contPessoas = 0;
     let contPesoasIdades = 0;
 
@@ -52,6 +52,5 @@ buttonReiniciar.addEventListener('click', limpar)
 function limpar() {
     res.innerHTML = '';
 }
-
-//?reiniciar variaveis
+ 
 

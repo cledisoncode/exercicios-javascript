@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício-85</title>
+    <style>
+        #botoes{
+            text-align: center;
+        }
+        #display{
+            margin: auto;
+            text-align: center;
+            width: 50vw;
+            height: 50vh;
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
     <h1>85) Faça um algoritmo que leia o nome, o sexo e o salário de 5 funcionários e guarde esses dados em três vetores. No final, mostre uma listagem contendo apenas os dados das funcionárias mulheres que ganham mais de R$5 mil.</h1>
+
+    <div id="botoes">
+        <input type="button" value="Iniciar Programa" onclick="listagem()">
+        <input type="button" value="Limpar Lista" onclick="limparLista()">
+    </div>
+
+    <div id="display">
+        <p id="res">
+            <!--Aqui fica a parte do js-->
+        </p>
+    </div>
+    <script src="ex085.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@ res.style.color = 'white';
 res.style.fontSize = '1.2em';
 
 function valores() {
-    let vetor = [];
+    const vetor = [];
         let t1 = 5;
         let t2 = 3;
 

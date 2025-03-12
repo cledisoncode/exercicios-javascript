@@ -1,5 +1,5 @@
 let numeroAutomatico = parseInt(Math.random() * 1000 + 1);
-let valores = []
+const valores = []
 
 function vetor() {
     const res = document.querySelector('p#res');

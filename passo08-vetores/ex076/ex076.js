@@ -3,7 +3,7 @@ res.style.textAlign = 'center';
 res.style.color = 'white';
 res.style.fontSize = '1.2em';
 
-let valores = []
+const valores = []
 
 function vetor() {
     for(let i = 0; i < 7; i++) {

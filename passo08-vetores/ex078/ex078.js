@@ -4,9 +4,9 @@ res.style.textAlign = 'center';
 res.style.padding = '5px';
 
 function vetor() {
-    let valores = [];
-    let vetorMultiplos10 = [];
-    let posicaoMultiplos10 = [];
+    const valores = [];
+    const vetorMultiplos10 = [];
+    const posicaoMultiplos10 = [];
 
     res.innerHTML = ''
     for(let i = 0; i < 15;i++) {
@@ -30,15 +30,15 @@ function vetor() {
             posicaoMultiplos10.push(i)
         }
     }
-    res.innerHTML += `<p>Os valores Multiplos de 10 são <strong id="numMultiplos10">(${vetorMultiplos10})</strong> e encontram-se nos indices <strong id="indicesDestaque"> ${posicaoMultiplos10}</strong> respectivamente.</p>`;
 
-    document.getElementById('numMultiplos10').style.backgroundColor = 'lightblue';
-    document.getElementById('indicesDestaque').style.backgroundColor = 'pink';
+    if(vetorMultiplos10.length === 0){
+        res.innerHTML += `<p>NÃO HÁ MULTIPLOS DE 10 NO VETOR!</p>`
+    } else {
+        res.innerHTML += `<p>Os valores Multiplos de 10 são <strong id="numMultiplos10">(${vetorMultiplos10})</strong> e encontram-se nos indices <strong id="indicesDestaque"> ${posicaoMultiplos10}</strong> respectivamente.</p>`;
+
+        document.getElementById('numMultiplos10').style.backgroundColor = 'lightblue';
+        document.getElementById('indicesDestaque').style.backgroundColor = 'pink';
+    }
+
     
-
-    
-
-
-
-
 }

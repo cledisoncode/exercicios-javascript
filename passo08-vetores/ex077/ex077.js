@@ -3,7 +3,7 @@ res.style.color = 'black'
 
 function nomes() {
     res.innerHTML = ''
-    let vetorNomes = [];
+    const vetorNomes = [];
     for(let i = 0; i < 7; i++){
         let nomesPessoas = prompt(`Qual o nome da pessoa ${i}?`);
         vetorNomes.push(nomesPessoas);

@@ -4,7 +4,7 @@ res.style.color = 'white';
 res.style.fontSize = '1.2em';
 
 function vetorFenobacci() {
-    let valores = []
+    const valores = []
     let t1 = 1
     let t2 = 0
 

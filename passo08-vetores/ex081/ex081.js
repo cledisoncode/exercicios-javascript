@@ -1,11 +1,11 @@
     function inserirIdades() {
-        let vetorIdades = [];
+        const vetorIdades = [];
         let contador = 0;
         let somaIdades = 0;
         let mediaIdades = 0;
-        let posicaoPessoasMais25 = [];
+        const posicaoPessoasMais25 = [];
         let maiorIdade = 0;
-        let posicaoMaiorIdade = [];
+        const posicaoMaiorIdade = [];
         
             for(let i = 0; i < 8; i++) {
                 let idades = Number(prompt(`Insira a idade da pessoa ${contador++}`));

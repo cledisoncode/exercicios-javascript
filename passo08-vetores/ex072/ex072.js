@@ -3,7 +3,7 @@ section.addEventListener('click',vetor);
 
 function vetor(){
     const res = document.querySelector('p#res');
-    let valores = []
+    const valores = []
     let c = 0;
     res.innerHTML = ''
     for(let i = 0; i <= 9; i++){

@@ -2,9 +2,9 @@ const res = document.getElementById('res');
 res.style.padding = '10px';
 
 function vetorPar() {
-    let vetorNumeros = [];
-    let vetorNumPares = [];
-    let posicaoNumPar = [];
+    const vetorNumeros = [];
+    const vetorNumPares = [];
+    const posicaoNumPar = [];
 
     for(let i = 0; i < 10; i++) {
         let num = Number(prompt(`Digite um número:`));

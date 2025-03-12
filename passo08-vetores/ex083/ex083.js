@@ -1,4 +1,4 @@
-let vetorNumerosAleatorios = [];
+const vetorNumerosAleatorios = [];
 
 for(let i = 0; i < 20; i++) {
     let numerosAleatorios = parseInt(Math.random() * 99 + 1);

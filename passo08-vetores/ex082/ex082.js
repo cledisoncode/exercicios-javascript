@@ -1,14 +1,14 @@
 
 
 function inserirNotas (){
-    let vetorNotas = [ ];
+    const vetorNotas = [ ];
     let contador = 0;
     let somaNotas = 0;
     let mediaNotas = 0;
     let alunosMediaAcima = 0;
     let maiorNota = 0;
-    let maiorNotaPosicao = [];
-    let alunos = [];
+    const maiorNotaPosicao = [];
+    const alunos = [];
 
     for(let i = 0; i < 10; i++){
         let notas = Number(prompt(`Insira a nota do aluno ${contador++}:`));

@@ -7,8 +7,8 @@ let vetorNumerosSorteados = [];
 
 function verificar() {
     let num =  document.getElementById('fnum');
-    let vetorNumeroEncontrado = [];
-    let posicaoNumeroEncontrado = [];
+    const vetorNumeroEncontrado = [];
+    const posicaoNumeroEncontrado = [];
 
     for(let i = 0; i < vetorNumerosSorteados.length; i++){
         if(vetorNumerosSorteados[i] === Number(num.value)) {

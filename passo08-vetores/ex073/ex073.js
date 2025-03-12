@@ -1,7 +1,8 @@
 const res = document.querySelector('p#res');
-res.style.textAlign = 'center'
+res.style.textAlign = 'center';
+
 function display() {
-    let valores = []
+    const valores = []
     let c = 9;
 
     res.innerHTML = ''
