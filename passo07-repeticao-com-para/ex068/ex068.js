@@ -16,7 +16,13 @@ function display() {
     
 
     for(let c = 1; c <= 8; c++){
-        sexo = prompt(`Digite o sexo da pessoa ${c} ( M | F)`);
+        do{
+            sexo = prompt(`Digite o sexo da pessoa ${c} ( M | F)`).toUpperCase();
+            if(sexo !== 'F' && sexo !== 'M'){
+                alert(`Entrada inválida! Por favor,insira apens 'F' ou 'M'`);
+            }
+        } while(sexo !== 'F' && sexo !== 'M');
+
         peso = parseFloat(prompt(`Digite o peso da pessoa ${c}(kg)`));
 
         if(sexo.toLocaleUpperCase() === 'F') {
