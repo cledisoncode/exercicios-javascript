@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercício-98</title>
+    <style>
+        section{
+            font: normal bolder 1em Arial,Helvetica;
+            background-color: #30ac25;
+            height: 60vh;
+            width: 500px;
+            margin: auto;
+            text-align: center;
+        }
+        input{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>98) Crie um programa que tenha uma função SuperSomador(), que vai receber dois números como parâmetro e depois vai retornar a soma de todos os valores no intervalo entre os valores recebidos. Ex:  
+    SuperSomador(1, 6) vai somar 1 + 2 + 3 + 4 + 5 + 6 e vai retornar 21 SuperSomador(15, 19) vai somar 15 + 16 + 17 + 18 + 19 e vai retornar 85 </h1>
+
+    <section>
+        <p>Digite o valor Inicial: <input type="number" name="txti" id="txti"></p>
+        <p>Digite o valor Final: <input type="number" name="txtf" id="txtf"></p>
+        <br>
+        <button onclick="somar()">Somar</button>
+        <br>
+        <br>
+        <p id="res">
+
+        </p>
+    </section>
+
+    <script src="ex098.js"></script>
+</body>
+</html>
